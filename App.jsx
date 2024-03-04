@@ -12,9 +12,45 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Profile" component={Profile} />
-        <Stack.Screen name="Contact" component={Contact} />
+        <Stack.Screen name="Home" component={Home} options={{
+          title: 'Tela Inicial',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: 'center',
+          // headerShown: false,
+        
+        }} />
+        <Stack.Screen name="Profile" component={Profile} options={{
+          title: 'Tela Inicial',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: 'center',
+          // headerShown: false,
+        
+        }} />
+        <Stack.Screen name="Contact" component={Contact} options={{
+          title: 'Tela Inicial',
+          headerStyle: {
+            backgroundColor: '#f4511e',
+          },
+          headerTintColor: '#fff',
+          headerTitleStyle: {
+            fontWeight: 'bold',
+          },
+          headerTitleAlign: 'center',
+          // headerShown: false,
+        
+        }} />
       </Stack.Navigator>
       <StatusBar style="auto" />
     </NavigationContainer>
